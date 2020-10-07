@@ -35,7 +35,7 @@ def szovegParos(szoveg):
 	ujSzoveg=""
 	for x in range(0,len(szoveg),2):
 		ujSzoveg=ujSzoveg+szoveg[x] 
-	return szoveg
+	return ujSzoveg
 	
 # Az eljárást készítette:	
 def szovegParatlan(szoveg):
@@ -44,15 +44,15 @@ def szovegParatlan(szoveg):
 	
 # Itt kezdődik a főprogram
 kor=1
-#while (kor >= 3):
+while (kor <= 3):
 
 	szoveg=input("Írj be egy szöveget:")
 	#még nincs kész a szovegFordit metódus!
 	#print(szovegFordit(szoveg))
 
-	szovegCsere("A szöveg csere:",szoveg)
-	szovegParos("Páros karakterek",szoveg)
-	szovegParatlan(szoveg)
+	print("A szöveg csere:", szovegCsere(szoveg))
+	print("A szöveg páros karakterei:", szovegParos(szoveg))
+	print("A szöveg páratlan karakterei:", szovegParatlan(szoveg))
 	#Cica keresése
 	if("cica" in szoveg):
 		print(szoveg)
