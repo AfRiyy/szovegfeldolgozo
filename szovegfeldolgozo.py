@@ -44,15 +44,19 @@ def szovegParatlan(szoveg):
 	return ""
 	
 # Itt kezdődik a főprogram
-szoveg=input("Írj be egy szöveget:")
-#még nincs kész a szovegFordit metódus!
-#print(szovegFordit(szoveg))
+kor=1
+while (kor >= 3):
+{
+	szoveg=input("Írj be egy szöveget:")
+	#még nincs kész a szovegFordit metódus!
+	#print(szovegFordit(szoveg))
 
-szovegCsere("A szöveg csere:",szoveg)
-szovegParos("Páros karakterek"szoveg)
-szovegParatlan(szoveg)
-#Cica keresése
-if(szoveg.find("cica") != -1):
-	print(szoveg)
+	szovegCsere("A szöveg csere:",szoveg)
+	szovegParos("Páros karakterek"szoveg)
+	szovegParatlan(szoveg)
+	#Cica keresése
+	if(szoveg.find("cica") != -1):
+		print(szoveg)
 
-
+	kor +=1
+}
