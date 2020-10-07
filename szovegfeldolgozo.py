@@ -18,7 +18,7 @@ def szovegFordit(szöveg):
 """
 # Az eljárást készítette:
 def szovegFordit(szoveg):
-	ujSzoveg=""
+	Újszoveg=""
 	for x in range(len(szoveg)-1,-1,-1):
 		ujSzoveg=ujSzoveg+szoveg[x] 
 	return "ujSzoveg"
