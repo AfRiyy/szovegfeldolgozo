@@ -18,19 +18,28 @@ def szovegFordit(szöveg):
 """
 # Az eljárást készítette:
 def szovegFordit(szoveg):
-	# Ide írd meg az eljárást!
-	return ""
+	ujSzoveg=""
+	for x in range(0,len(szoveg)-1,2):
+	ujSzoveg=ujSzoveg+szoveg[x] 
+	return "ujSzoveg"
 	
 # Az eljárást készítette:	
 def szovegCsere(szoveg):
 	# Ide írd meg az eljárást!
 	return ""
 	
-# Az eljárást készítette:	
+# Az eljárást készítette: Jáger Attila	
 def szovegParos(szoveg):
+<<<<<<< HEAD
 	if ((len(szoveg)%2)	= 0):
 		return szoveg
 	
+=======
+	ujSzoveg=""
+	for x in range(0,len(szoveg),2):
+		ujSzoveg=ujSzoveg+szoveg[x] 
+	return ujSzoveg
+>>>>>>> 255c429ca222c077b71f68e5970993c30b1fd156
 	
 # Az eljárást készítette:	
 def szovegParatlan(szoveg):
