@@ -38,4 +38,14 @@ def szovegParatlan(szoveg):
 	
 # Itt kezdődik a főprogram
 szoveg=input("Írj be egy szöveget:")
-print(szovegFordit(szoveg))
+#még nincs kész a szovegFordit metódus!
+#print(szovegFordit(szoveg))
+
+szovegCsere(szoveg)
+szovegParos(szoveg)
+szovegParatlan(szoveg)
+#Cica keresése
+if(szoveg.find("cica") != -1):
+	print(szoveg)
+
+
