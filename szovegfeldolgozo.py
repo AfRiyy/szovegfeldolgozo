@@ -54,8 +54,7 @@ while (kor >= 3):
 	szovegParos("Páros karakterek",szoveg)
 	szovegParatlan(szoveg)
 	#Cica keresése
-	if("cica" in ) != -1):
+	if("cica" in szoveg):
 		print(szoveg)
-
 	kor +=1
 
