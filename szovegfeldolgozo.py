@@ -28,8 +28,9 @@ def szovegCsere(szoveg):
 	
 # Az eljárást készítette:	
 def szovegParos(szoveg):
-	# Ide írd meg az eljárást!
-	return ""
+	if ((len(szoveg)%2)	= 0):
+		return szoveg
+	
 	
 # Az eljárást készítette:	
 def szovegParatlan(szoveg):
@@ -41,8 +42,8 @@ szoveg=input("Írj be egy szöveget:")
 #még nincs kész a szovegFordit metódus!
 #print(szovegFordit(szoveg))
 
-szovegCsere(szoveg)
-szovegParos(szoveg)
+szovegCsere("A szöveg csere:",szoveg)
+szovegParos("Páros karakterek"szoveg)
 szovegParatlan(szoveg)
 #Cica keresése
 if(szoveg.find("cica") != -1):
