@@ -28,10 +28,12 @@ def szovegCsere(szoveg):
 	# Ide írd meg az eljárást!
 	return ""
 	
-# Az eljárást készítette:	
+# Az eljárást készítette: Jáger Attila	
 def szovegParos(szoveg):
-	# Ide írd meg az eljárást!
-	return ""
+	ujSzoveg=""
+	for x in range(0,len(szoveg),2):
+		ujSzoveg=ujSzoveg+szoveg[x] 
+	return ujSzoveg
 	
 # Az eljárást készítette:	
 def szovegParatlan(szoveg):
