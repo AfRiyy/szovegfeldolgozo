@@ -63,4 +63,5 @@ while (kor <= 3):
 	if("cica" in szoveg):
 		print(szoveg)
 	kor +=1
+	print()
 
