@@ -1,9 +1,10 @@
+"""
 import colorama
 from colorama import Fore, Back, Style
 colorama.init()
 print(Fore.CYAN)
 
-"""
+
 PUSKA
 
 A szöveg hossza: len(szoveg)
