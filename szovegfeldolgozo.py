@@ -51,10 +51,10 @@ while (kor >= 3):
 	#print(szovegFordit(szoveg))
 
 	szovegCsere("A szöveg csere:",szoveg)
-	szovegParos("Páros karakterek"szoveg)
+	szovegParos("Páros karakterek",szoveg)
 	szovegParatlan(szoveg)
 	#Cica keresése
-	if(szoveg.find("cica") != -1):
+	if("cica" in ) != -1):
 		print(szoveg)
 
 	kor +=1
