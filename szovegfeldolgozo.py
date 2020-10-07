@@ -18,10 +18,10 @@ def szovegFordit(szöveg):
 """
 # Az eljárást készítette:
 def szovegFordit(szoveg):
-	Újszoveg=""
+	ujSzoveg=""
 	for x in range(len(szoveg)-1,-1,-1):
 		ujSzoveg=ujSzoveg+szoveg[x] 
-	return "ujSzoveg"
+	return ujSzoveg
 	
 # Az eljárást készítette:	
 def szovegCsere(szoveg):
