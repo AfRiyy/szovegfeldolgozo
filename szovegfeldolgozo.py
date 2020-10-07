@@ -1,27 +1,4 @@
 """
-import colorama
-from colorama import Fore, Back, Style
-colorama.init()
-print(Fore.CYAN)
-
-
-PUSKA
-
-A szöveg hossza: len(szoveg)
-A szöveg utolsó karater: szoveg[len(szoveg)-1]
-Csere a szövegben : szoveg.replace("H", "J") // a nagy "H"-kat nagy "J"-re cserélem
-A szöveg tartalmazza az alma karaktereket?: logikaiValtozo = "alma" in szoveg // not in - nem tartalmazza
-
-Ciklus:
-ujSzoveg=""
-for x in range(0,len(szoveg)-1,2):
-	ujSzoveg=ujSzoveg+szoveg[x] 
-
-Eljáras:
-def szovegFordit(szöveg):
-	...
-	return vissza
-"""
 # Az eljárást készítette:
 def szovegFordit(szoveg):
 	ujSzoveg=""
@@ -60,10 +37,10 @@ while (kor <= 3):
 	szoveg=input("Írj be egy szöveget:")
 	#még nincs kész a szovegFordit metódus!
 	#print(szovegFordit(szoveg))
-	print(Fore.RED)
+	
 	print("A szöveg csere:", szovegCsere(szoveg))
 	print("A szöveg páros karakterei:", szovegParos(szoveg))
-	print(Fore.GREEN)
+	
 	print("A szöveg páratlan karakterei:", szovegParatlan(szoveg))
 	print("A szöveg forditva:", szovegFordit(szoveg))
 	#Cica keresése
