@@ -44,7 +44,7 @@ def szovegParatlan(szoveg):
 	
 # Itt kezdődik a főprogram
 kor=1
-while (kor >= 3):
+#while (kor >= 3):
 
 	szoveg=input("Írj be egy szöveget:")
 	#még nincs kész a szovegFordit metódus!
