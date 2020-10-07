@@ -18,15 +18,17 @@ def szovegFordit(szöveg):
 """
 # Az eljárást készítette:
 def szovegFordit(szoveg):
-	Újszoveg=""
+	ujSzoveg=""
 	for x in range(len(szoveg)-1,-1,-1):
 		ujSzoveg=ujSzoveg+szoveg[x] 
-	return "ujSzoveg"
+	return ujSzoveg
 	
 # Az eljárást készítette:	
 def szovegCsere(szoveg):
-	# Ide írd meg az eljárást!
-	return ""
+	maganHangzo="aioőúűáéüóöí"
+	for x in range(0,len(maganHangzo)):
+		szoveg=szoveg.replace(maganHangzo[x],'e')
+	return szoveg
 	
 # Az eljárást készítette: Jáger Attila	
 def szovegParos(szoveg):
@@ -40,7 +42,10 @@ def szovegParos(szoveg):
 # Az eljárást készítette:	
 def szovegParatlan(szoveg):
 	# Ide írd meg az eljárást!
-	return ""
+	ujSzoveg=""
+	for x in range(1,len(szoveg),2):
+		ujSzoveg=ujSzoveg+szoveg[x] 
+	return ujSzoveg
 	
 # Itt kezdődik a főprogram
 kor=1
@@ -52,7 +57,8 @@ while (kor <= 3):
 
 	print("A szöveg csere:", szovegCsere(szoveg))
 	print("A szöveg páros karakterei:", szovegParos(szoveg))
-	print("A szöveg páros karakterei:", szovegParatlan(szoveg))
+	print("A szöveg páratlan karakterei:", szovegParatlan(szoveg))
+	print("A szöveg forditva:", szovegFordit(szoveg))
 	#Cica keresése
 	if("cica" in szoveg):
 		print(szoveg)
