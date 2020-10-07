@@ -52,7 +52,7 @@ while (kor <= 3):
 
 	print("A szöveg csere:", szovegCsere(szoveg))
 	print("A szöveg páros karakterei:", szovegParos(szoveg))
-	print("A szöveg páros karakterei:", szovegParatlan(szoveg))
+	print("A szöveg páratlan karakterei:", szovegParatlan(szoveg))
 	#Cica keresése
 	if("cica" in szoveg):
 		print(szoveg)
