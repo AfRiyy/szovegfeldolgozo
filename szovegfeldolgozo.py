@@ -1,3 +1,8 @@
+import colorama
+from colorama import Fore, Back, Style
+colorama.init()
+print(Fore.CYAN)
+
 """
 PUSKA
 
@@ -54,9 +59,10 @@ while (kor <= 3):
 	szoveg=input("Írj be egy szöveget:")
 	#még nincs kész a szovegFordit metódus!
 	#print(szovegFordit(szoveg))
-
+	print(Fore.RED)
 	print("A szöveg csere:", szovegCsere(szoveg))
 	print("A szöveg páros karakterei:", szovegParos(szoveg))
+	print(Fore.GREEN)
 	print("A szöveg páratlan karakterei:", szovegParatlan(szoveg))
 	print("A szöveg forditva:", szovegFordit(szoveg))
 	#Cica keresése
