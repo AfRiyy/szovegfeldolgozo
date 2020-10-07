@@ -1,3 +1,9 @@
+import colorama
+from colorama import Fore, Back, Style
+colorama.init()
+print(Fore.CYAN)
+print((33*45)/2)
+
 """
 PUSKA
 
