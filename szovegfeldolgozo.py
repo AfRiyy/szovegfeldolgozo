@@ -19,8 +19,8 @@ def szovegFordit(szöveg):
 # Az eljárást készítette:
 def szovegFordit(szoveg):
 	Újszoveg=""
-	for x in range(0,len(szoveg)-1,-1,-1):
-	ujSzoveg=ujSzoveg+szoveg[x] 
+	for x in range(len(szoveg)-1,-1,-1):
+		ujSzoveg=ujSzoveg+szoveg[x] 
 	return "ujSzoveg"
 	
 # Az eljárást készítette:	
@@ -30,16 +30,12 @@ def szovegCsere(szoveg):
 	
 # Az eljárást készítette: Jáger Attila	
 def szovegParos(szoveg):
-<<<<<<< HEAD
-	if ((len(szoveg)%2)	= 0):
-		return szoveg
-	
-=======
+	# Ez egy tök jó eljárás!!!
+	# Én írtam, és ma álmos is vagyok!	
 	ujSzoveg=""
 	for x in range(0,len(szoveg),2):
 		ujSzoveg=ujSzoveg+szoveg[x] 
-	return ujSzoveg
->>>>>>> 255c429ca222c077b71f68e5970993c30b1fd156
+	return szoveg
 	
 # Az eljárást készítette:	
 def szovegParatlan(szoveg):
@@ -47,15 +43,19 @@ def szovegParatlan(szoveg):
 	return ""
 	
 # Itt kezdődik a főprogram
-szoveg=input("Írj be egy szöveget:")
-#még nincs kész a szovegFordit metódus!
-#print(szovegFordit(szoveg))
+kor=1
+while (kor >= 3):
 
-szovegCsere("A szöveg csere:",szoveg)
-szovegParos("Páros karakterek"szoveg)
-szovegParatlan(szoveg)
-#Cica keresése
-if(szoveg.find("cica") != -1):
-	print(szoveg)
+	szoveg=input("Írj be egy szöveget:")
+	#még nincs kész a szovegFordit metódus!
+	#print(szovegFordit(szoveg))
 
+	szovegCsere("A szöveg csere:",szoveg)
+	szovegParos("Páros karakterek"szoveg)
+	szovegParatlan(szoveg)
+	#Cica keresése
+	if(szoveg.find("cica") != -1):
+		print(szoveg)
+
+	kor +=1
 
